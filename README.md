@@ -1,12 +1,16 @@
 # M32CTV
 
-<div>Los invernaderos ofrecen muchas ventajas sobre los métodos de agricultura tradicionales y el cultivo de algunas hortalizas y otras plantas en las ciudades cada día es más común. La tecnología actual en los invernaderos puede incluir la automatización de tareas y control de parámetros; medición/control de humedad, temperatura, PH, Automatización de riego, ventilación, fotoperiodo, etc.
+<div>Aquí hay código para automatizar el encendido/apagado de algunos dispositivos usados en invernaderos. Se usa un microcontrolador de 8 bits cargado con el bootloader de Arduino, comunicación inalámbrica via UART y algo de electrónica para activar los relevadores para una bomba de riego, ventiladores y/o extractores, y lámparas de cutivo.
 <br>
-Los dispositivos y la comunidad opensource son de ayuda para integrar esta tecnología en sistemas dedicados</div>
+Este repo se está construyendo.</div>
 <br>
 <div align="center"><img src="./src/atmegaPinout.png" alt="imagen" width="300" height="300"/><br></div>
 
 ## 1. TEMA 1 
+<div>Los invernaderos ofrecen muchas ventajas sobre los métodos de agricultura tradicionales. El cultivo en la ciudad de algunas plantas y hortalizas es más común actualmente. La tecnología usada en la agricultura protegida también se puede adaptar a espacios dedicados en la ciudad. Esta tecnología puede incluir la automatización de tareas y control de parámetros; medición/control de humedad, temperatura, PH. Automatización de riego, ventilación, fotoperiodo, etc.
+<br>
+text</div>
+<br>
 ## 2. TEMA 2
 ## 3. TEMA 3
 
