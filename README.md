@@ -6,8 +6,7 @@ Los dispositivos y la comunidad opensource son de ayuda para integrar esta tecno
 <br>
 <div align="center"><img src="./src/atmegaPinout.png" alt="imagen" width="300" height="300"/><br></div>
 
-
-## DESCRIPCIÓN
-## TARJETA DE CONTROL
-## INSTALACIÓN DOMÉSTICA
+## 1. TEMA 1 
+## 2. TEMA 2
+## 3. TEMA 3
 
