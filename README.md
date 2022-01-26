@@ -14,12 +14,12 @@
  <li align="justify"><b>Luz.</b><br>El sol es una gran fuente de energía e influye directamente en el desarrollo de los seres vivos. Hoy existen lámparas de cultivo más eficientes que usan los colores rojo y azul principalmente. Se dispone de 1 pin digital del microcontrolador para el control de una lámpara en CA.</li><br>
 <table align="center">
   <tr>
-    <th>Led azul/rojo.</th>
+    <th>Led rojo/azul.</th>
     <th>Led blanco.</th>
     <th>Otras lámparas.</th>
   </tr>
   <tr>
-    <td><img src="./src/hyd_l.jpg" alt="imagen" width="60" height="60"/></td>
+    <td align="center"><img src="./src/hyd_l.jpg" alt="imagen" width="90" height="90"/></td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
