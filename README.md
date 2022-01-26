@@ -20,8 +20,8 @@
   </tr>
   <tr>
     <td align="center"><img src="./src/hyd_l.jpg" alt="imagen" width="90" height="90"/></td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td align="center"><img src="./src/phi_lw.jpg" alt="imagen" width="90" height="90"/></td>
+    <td align="center"><img src="./src/phi_so.jpg" alt="imagen" width="90" height="90"/></td>
   </tr>
 </table>
  <li align="justify"><b>Riego.</b><br>Existen diferentes sistemas de riego y se debe a las multiples variables de un cultivo. Podemos mencionar algunos como: asperción, goteo, por gravedad, nft, entre otros.  Se dispone de 1 pin digital del microcontrolador para el control de una bomba de agua en CA.</li>
