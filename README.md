@@ -19,7 +19,7 @@
     <th>Otras lámparas.</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
+    <td><img src="./src/hyd_l.jpg" alt="imagen" width="60" height="60"/></td>
     <td>Maria Anders</td>
     <td>Germany</td>
   </tr>
