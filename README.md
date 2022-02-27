@@ -11,7 +11,7 @@
 
 <div>
 <ul>
- <li align="justify"><b>Luz.</b><br>El sol es una gran fuente de energía e influye directamente en el desarrollo de los seres vivos. Hoy existen lámparas de cultivo que emulan la radiación solar, algunas usan los colores rojo y azul principalmente. Se dispone de 1 pin digital del microcontrolador para el control de una lámpara en CA.</li><br>
+ <li align="justify"><b>Luz.</b><br>El sol es una gran fuente de energía e influye directamente en el desarrollo de los seres vivos. Hoy existen lámparas de cultivo que emulan la radiación solar, algunas usan los colores rojo y azul principalmente. Se dispone de <b>1 pin digital</b> del microcontrolador para el control de una lámpara en CA.</li><br>
 <table align="center">
   <tr>
     <th>Led rojo/azul.</th>
@@ -24,7 +24,7 @@
     <td align="center"><img src="./src/phi_so.jpg" alt="imagen" width="90" height="90"/></td>
   </tr>
 </table>
- <li align="justify"><b>Riego.</b><br>Existen diferentes sistemas de riego y se debe a las multiples variables de un cultivo. Podemos mencionar algunos como: asperción, goteo, por gravedad, nft, entre otros.  Se dispone de 1 pin digital del microcontrolador para el control de una bomba de agua en CA.</li><br>
+ <li align="justify"><b>Riego.</b><br>Existen diferentes sistemas de riego, se pueden mencionar algunos como: asperción, goteo, por gravedad, nft, entre otros. Se hace uso de una bomba de agua o de una electroválvula para activar el flujo de agua en el cultivo. <b>Se dispone de 1 pin digital para esta tarea.</b></li><br>
  <table align="center">
   <tr>
     <th>Goteo.</th>
@@ -33,10 +33,10 @@
    <th>Válvula E.</th>
   </tr>
   <tr>
-    <td align="center"><img src="./src/hyd_l.jpg" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="./src/phi_lw.jpg" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="./src/phi_so.jpg" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="./src/phi_lw.jpg" alt="imagen" width="90" height="90"/></td>
+    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.groho.es%2Fpost%2Friego-por-goteo&psig=AOvVaw0LASxjFssI6TLAwYyNJMXc&ust=1646014488748000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC324TonvYCFQAAAAAdAAAAABAD" alt="imagen" width="90" height="90"/></td>
+    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Farticulo.mercadolibre.com.mx%2FMLM-874430482-kit-20-sistema-de-riego-por-goteo-huerto-_JM&psig=AOvVaw3AIzffhUuGi6Jm8PuIC3l6&ust=1646014653159000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjR8t_onvYCFQAAAAAdAAAAABAO" alt="imagen" width="90" height="90"/></td>
+    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhuertacasera.com%2Fhidroponia%2Fsistema-de-cultivo-hidroponico-nft%2F&psig=AOvVaw0l9cxfrfbtE7Pecjz8FA_A&ust=1646014796365000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLCr5KnpnvYCFQAAAAAdAAAAABAE" alt="imagen" width="90" height="90"/></td>
+    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.traxco.es%2Ftienda%2Felectrovalvula-rpe&psig=AOvVaw24g2PKSLCnlKrPhL18_ipP&ust=1646014917721000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNimqcXpnvYCFQAAAAAdAAAAABAY" alt="imagen" width="90" height="90"/></td>
   </tr>
 </table>
  <li align="justify"><b>Ventilación/extracción.</b><br>Algunas veces es necesario hacer circular aire en los invernaderos, con la finalidad de mantener una temperatura uniforme o eliminar el aire viciado. Se dispone de 1 pin digital del microcontrolador para el control de un ventilador y/o extractor en CA.</li>
@@ -46,5 +46,17 @@
 ## 2. TARJETA DE CONTROL
 <div align="justify">Aquí se documentará sobre la tarjeta de control propuesta.</div>
 
+<ul>
+<li>Salidas digitales.</li>
+<li>Real Time Clock.</li>
+<li>Comunicación inalámbrica.</li>
+</ul>
+
 ## 3. INSTALACIÓN ELÉCTRICA
 <div align="justify">Aquí se documentará sobre la instalación eléctrica propuesta.</div>
+
+<ul>
+<li>Contactores.</li>
+<li>Interruptores Termomagnéticos.</li>
+<li>Diagrama Eléctrico.</li>
+</ul>
