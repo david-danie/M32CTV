@@ -19,9 +19,9 @@
     <th>Otras lámparas.</th>
   </tr>
   <tr>
-    <td align="center"><img src="./src/hyd_l.jpg" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="./src/phi_lw.jpg" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="./src/phi_so.jpg" alt="imagen" width="90" height="90"/></td>
+    <td align="center"><img src="./src/hyd_l.jpg" alt="imagen" width="100" height="100"/></td>
+    <td align="center"><img src="./src/phi_lw.jpg" alt="imagen" width="100" height="100"/></td>
+    <td align="center"><img src="./src/phi_so.jpg" alt="imagen" width="100" height="100"/></td>
   </tr>
 </table>
  <li align="justify"><b>Riego.</b><br>Existen diferentes sistemas de riego, se pueden mencionar algunos como: asperción, goteo, por gravedad, nft, entre otros. Se hace uso de una bomba de agua o de una electroválvula para activar el flujo de agua en el cultivo. <b>Se dispone de 1 pin digital para esta tarea.</b></li><br>
@@ -33,19 +33,18 @@
    <th>Válvula E.</th>
   </tr>
   <tr>
-    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.groho.es%2Fpost%2Friego-por-goteo&psig=AOvVaw0LASxjFssI6TLAwYyNJMXc&ust=1646014488748000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC324TonvYCFQAAAAAdAAAAABAD" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Farticulo.mercadolibre.com.mx%2FMLM-874430482-kit-20-sistema-de-riego-por-goteo-huerto-_JM&psig=AOvVaw3AIzffhUuGi6Jm8PuIC3l6&ust=1646014653159000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjR8t_onvYCFQAAAAAdAAAAABAO" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhuertacasera.com%2Fhidroponia%2Fsistema-de-cultivo-hidroponico-nft%2F&psig=AOvVaw0l9cxfrfbtE7Pecjz8FA_A&ust=1646014796365000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLCr5KnpnvYCFQAAAAAdAAAAABAE" alt="imagen" width="90" height="90"/></td>
-    <td align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.traxco.es%2Ftienda%2Felectrovalvula-rpe&psig=AOvVaw24g2PKSLCnlKrPhL18_ipP&ust=1646014917721000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNimqcXpnvYCFQAAAAAdAAAAABAY" alt="imagen" width="90" height="90"/></td>
+    <td align="center"><img src="./src/goteo.jpg" alt="imagen" width="100" height="100"/></td>
+    <td align="center"><img src="./src/grav1.jpg" alt="imagen" width="100" height="100"/></td>
+    <td align="center"><img src="./src/NFT.jpg" alt="imagen" width="100" height="100"/></td>
+    <td align="center"><img src="./src/valve.jpg" alt="imagen" width="100" height="100"/></td>
   </tr>
 </table>
- <li align="justify"><b>Ventilación/extracción.</b><br>Algunas veces es necesario hacer circular aire en los invernaderos, con la finalidad de mantener una temperatura uniforme o eliminar el aire viciado. Se dispone de 1 pin digital del microcontrolador para el control de un ventilador y/o extractor en CA.</li>
+<li align="justify"><b>Ventilación/extracción.</b><br>La calidad del aire influye en el crecimiento de las plantas y en la temperatura de los invernaderos. Algunas veces es necesario forzar la cirulación aire limpio en los invernaderos y eliminar el aire viciado. <b>Se dispone de 1 pin digital del microcontrolador</b> para el control de un ventilador y/o extractor en CA.</li>
 </ul>
 </div>
 
 ## 2. TARJETA DE CONTROL
-<div align="justify">Aquí se documentará sobre la tarjeta de control propuesta.</div>
-
+<div align="justify">Aquí se documentará sobre la tarjeta de control propuesta.</div><br>
 <ul>
 <li>Salidas digitales.</li>
 <li>Real Time Clock.</li>
@@ -53,7 +52,7 @@
 </ul>
 
 ## 3. INSTALACIÓN ELÉCTRICA
-<div align="justify">Aquí se documentará sobre la instalación eléctrica propuesta.</div>
+<div align="justify">Aquí se documentará sobre la instalación eléctrica propuesta.</div><br>
 
 <ul>
 <li>Contactores.</li>
