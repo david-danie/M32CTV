@@ -50,16 +50,20 @@
 </div>
 
 ## 2. TARJETA DE CONTROL
-<div align="justify">El microcontrolador Atmega328 de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Tiene 32 KB de memoria de programa, cuenta con hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar con un cristal externo de hasta 16 MHz para obtener hasta 16 MIPS. Tiene la capacidad de cargase con el bootloader de Arduino. Los periféricos que se ocupan en este proyeto son I2C, UART interface, salidas PWM y un bloque de salidas digitales para los actuadores.</div><br>
+<div align="justify">El microcontrolador Atmega328 de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Cuenta con una memoria de programa de 32 KBytes, 1 KBytes en EEPROM, tiene hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar desde 1.8 volts hasta 5.5 volts. Algunas características usadas en este proyecto son; I2C, UART, salidas PWM y un bloque de salidas digitales para los actuadores. Se usa el bootloader de la tarjeta Arduino UNO.</div><br>
 <ul>
 <li><b>Salidas digitales.</b></li>
+Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Estas salidas están conectadas individualmente a un SSR (AQH2213) con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.
 <br>
-Se ocupan 3 salidas digitales para la activación de los componentes mencionados (lámpara, bomba de agua y ventilador/extractor). Estás salidas están conectadas a SSR's () los cuales nos permiten activar las bobinas en CA de los respectivos contactores.<br>
 <li><b>Real Time Clock.</b></li>
+Para temporizar el encendido y apagado que deben tener los equipos, se usa un RTC a través de la interface serial I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar las salidas correspondientes.
 <br>
-Para temporizar el encendido y apagado que deben tener los equipos, se usa un RTC a través del puerto I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar los pines correspondientes.<br>
-<li>Comunicación inalámbrica.</li><br>
-La interface UART<br>
+<li><b>Comunicación inalámbrica.</b></li>
+La interface USART nos permite hacer comunicaciones con implementaciones como WIFI, BLE, GSM, otros tipos de RF, estándares como RS485, RS232, también se puede adaptar a CAN y LIN. Se usa esta interface para hacer una comunicación via BLE, la cual nos permitirá actualizar las variables del cultivo.
+<br>
+<li><b>Salidas PWM.</b></li>
+La modulación por ancho de pulso es una técnica eléctronica que se aplica principalmente para el control de potencia.
+<br>
 </ul>
 
 ## 3. INSTALACIÓN ELÉCTRICA
