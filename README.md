@@ -50,14 +50,14 @@
 </div>
 
 ## 2. TARJETA DE CONTROL
-<div align="justify">El microcontrolador Atmega328 de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Cuenta con una memoria de programa de 32 KBytes, 1 KBytes en EEPROM, tiene hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar desde 1.8 volts hasta 5.5 volts. Algunas características usadas en este proyecto son; I2C, UART, salidas PWM y un bloque de salidas digitales para los actuadores. Se usa el bootloader de la tarjeta Arduino UNO.</div><br>
+<div align="justify">El microcontrolador <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf">Atmega328</a> de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Cuenta con una memoria de programa de 32 KBytes, 1 KBytes en EEPROM, tiene hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar desde 1.8 volts hasta 5.5 volts. Algunas características usadas en este proyecto son; I2C, UART, salidas PWM y un bloque de salidas digitales para los actuadores. Se usa el bootloader de la tarjeta Arduino UNO.</div><br>
 <ul>
 <li align="justify"><b>Salidas digitales.</b>
-Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Estas salidas están conectadas individualmente a un SSR (AQH2213) con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.
+Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Estas salidas están conectadas individualmente a un SSR (<a href="https://www.farnell.com/datasheets/2244198.pdf">AQH2213</a>) con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.
 </li>
 <br>
 <li align="justify"><b>Real Time Clock.</b>
-Para temporizar el encendido y apagado que deben tener los equipos, se usa un RTC a través de la interface serial I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar las salidas correspondientes.
+Para temporizar el encendido y apagado que deben tener los equipos, se usa un <a href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf">RTC</a> a través de la interface serial I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar las salidas correspondientes.
 </li>
 <br>
 <li align="justify"><b>Comunicación inalámbrica.</b>
