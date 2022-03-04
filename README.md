@@ -54,8 +54,10 @@
 <ul>
 <li align="justify"><b>Salidas digitales.</b>
 Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Estas salidas están conectadas individualmente a un SSR (<a href="https://www.farnell.com/datasheets/2244198.pdf">AQH2213</a>) con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.
+
  <br>
- <table align="center">
+<div align="center"><img src="./src/pin_sch.png" alt="imagen"/><br></div>
+ <!-- <table align="center">
   <tr>
     <th>Conexion.</th>
     <th>Diagrama.</th>
@@ -64,13 +66,13 @@ Se ocupan 3 salidas digitales para la activación de los dispositivos mencionado
     <td align="center"><img src="./src/pin_sch.png" alt="imagen" width="100" height="100"/></td>
     <td align="center"><img src="./src/phi_lw.jpg" alt="imagen" width="100" height="100"/></td>
   </tr>
-</table>
+</table> -->
 </li>
 <br>
 <li align="justify"><b>Real Time Clock.</b>
 Para temporizar el encendido y apagado que deben tener los equipos, se usa un <a href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf">RTC</a> a través de la interface serial I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar las salidas correspondientes.
 <br>
-<img  align="center" src="./src/ds1307_sch.png" alt="imagen" width="100" height="100"/>
+<div align="center"><img src="./src/ds1307_sch.png" alt="imagen"/><br></div>
 </li>
 <br>
 <li align="justify"><b>Comunicación inalámbrica.</b>
