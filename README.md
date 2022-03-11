@@ -56,7 +56,17 @@
 Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Estas salidas están conectadas individualmente a un SSR (<a href="https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787">AQH2213</a>) con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.
 <br>
 <br>
-<div align="center"><img src="./src/pin_sch.png" alt="imagen"/><img src="./src/pin_wiri.png" alt="imagen"/><br></div>
+
+<div align="center"> <table align="center">
+  <tr>
+    <th><img src="./src/pin_sch.png" alt="imagen"/></th>
+    <th><img src="./src/pin_wiri.png" alt="imagen"/></th>
+    <!-- <th>Película de nutrientes.</th>
+   <th>Válvula E.</th> -->
+  </tr>
+  </table><br>
+</div>
+
 </li>
 <br>
 <li align="justify"><b>Real Time Clock.</b>
