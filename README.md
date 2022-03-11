@@ -57,9 +57,10 @@ Se ocupan 3 salidas digitales para la activación de los dispositivos mencionado
 <br>
 <br>
 
-<div align="center"> <table align="center">
+<div align="center"> 
+<table align="center">
   <tr>
-    <th>Diagrama de conexión sugerido.</th>
+    <th>Diagrama típico de conexión.</th>
     <th>Diagrama de conexión final.</th>
   </tr>
   <tr>
@@ -76,7 +77,21 @@ Se ocupan 3 salidas digitales para la activación de los dispositivos mencionado
 Para temporizar el encendido y apagado que deben tener los equipos, se usa un <a href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf">RTC</a> a través de la interface serial I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar las salidas correspondientes.
 <br>
 <br>
-<div align="center"><img src="./src/ds1307_sch.png" alt="imagen"/><br></div>
+
+<div align="center"> 
+<table align="center">
+  <tr>
+    <th>Diagrama típico de conexión.</th>
+    <th>Diagrama de conexión final.</th>
+  </tr>
+  <tr>
+    <th><a href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf"><img src="./src/ds1307_wiri.png" alt="imagen"/></a></th>
+    <th><img src="./src/ds1307_sch.png" alt="imagen"/></th>
+  </tr>
+  </table>
+</div>
+<br>
+
 </li>
 <br>
 <li align="justify"><b>Comunicación inalámbrica.</b>
