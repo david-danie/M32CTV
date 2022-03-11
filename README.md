@@ -59,12 +59,12 @@ Se ocupan 3 salidas digitales para la activación de los dispositivos mencionado
 
 <div align="center"> <table align="center">
   <tr>
-    <th>Diagrama propuesto de conexión.</th>
-    <th>Diagrama de conexión.</th>
+    <th>Diagrama de conexión sugerido.</th>
+    <th>Diagrama de conexión final.</th>
   </tr>
   <tr>
-    <th><img src="./src/pin_wiri.png" alt="imagen"/></th>
-    <th><a href="https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787"><img src="./src/pin_sch.png" alt="imagen"/></a></th>
+    <th><a href="https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787"><img src="./src/pin_wiri.png" alt="imagen"/></a></th>
+    <th><img src="./src/pin_sch.png" alt="imagen"/></th>
   </tr>
   </table>
 </div>
