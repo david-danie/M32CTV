@@ -2,7 +2,7 @@
 
 <div align="justify">Aquí hay código para automatizar el encendido/apagado de algunos dispositivos usados en invernaderos. Se usa un microcontrolador de 8 bits cargado con el bootloader de Arduino, comunicación inalámbrica via UART, temporización con un RTC y algo de electrónica para activar contactores de una bomba de riego, ventiladores y/o extractores, y lámparas de cutivo. <b>En ...</b></div>
 <br>
-<div align="center"><img src="./src/R9-46W.png" alt="imagen" width="675" height="345"/><br></div>
+<div align="center"><img src="./src/descripcion.png" alt="imagen" width="675" height="345"/><br></div>
 
 ## 1. COMPONENTES
 <div align="justify">Los invernaderos ofrecen muchas ventajas sobre los métodos de agricultura tradicionales. El cultivo de algunas plantas y hortalizas puede adaptarse a espacios dedicados en la ciudad. La tecnología usada en la agricultura protegida también se puede adaptar a estos lugares y  puede pensarse en; la automatización de tareas como el riego, ventilación/extracción, luz (fotoperiodo) y medición de parámetros como temperatua, humedad, PH, etc.
