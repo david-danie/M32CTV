@@ -4,6 +4,11 @@
 <br>
 <div align="center"><img src="./src/descripcion.png" alt="imagen" width="675" height="345"/><br></div>
 
+
+* [COMPONENTES](## 1. COMPONENTES)
+* [TARJETA DE CONTROL](#cliente)
+* [cONEXIÓN DOMÉSTICA](#gui)
+
 ## 1. COMPONENTES
 <div align="justify">Los invernaderos ofrecen muchas ventajas sobre los métodos de agricultura tradicionales. El cultivo de algunas plantas y hortalizas puede adaptarse a espacios dedicados en la ciudad. La tecnología usada en la agricultura protegida también se puede adaptar a estos lugares y puede contemplar la automatización de tareas como el riego, la ventilación y/o extracción de aire, control de fotoperiodo y también la medición de parámetros como temperatura, humedad, PH, etc.
 </div>
