@@ -57,16 +57,16 @@
  <br> 
 
  <div align="center">
-  <table align="center">
-   <tr>
-     <th>&emsp;  EXTRACTOR 230 W.  &emsp;</th>
-     <th>&emsp;  VENTILADOR 250 W.  &emsp;</th>
-     <th>&emsp;  EXTRACTOR 760 W.  &emsp;</th>
-   </tr>
-  </table>
-     <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.mx%2FK%25C3%25BCchenks-Ventilador-port%25C3%25A1til-Extractor-el%25C3%25A9ctrico%2Fdp%2FB08CXWWND8&psig=AOvVaw3Coj1Ee5TrEVGTRwswI1Vu&ust=1650145652687000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKiJ9d2Fl_cCFQAAAAAdAAAAABAH" target="_blank" rel="noreferrer"> <img src="https://m.media-amazon.com/images/I/81-hciY6CVL._AC_SX466_.jpg" alt="imagen" width="150" height="150"/></a>&emsp;&emsp;&emsp;&emsp;
-  <a href="https://www.amazon.com.mx/Ventilador-industrial-circulaci%C3%B3n-velocidades-invernadero/dp/B08MJ43TFB/ref=asc_df_B08MJ43TFB/?tag=gledskshopmx-20&linkCode=df0&hvadid=547086987042&hvpos=&hvnetw=g&hvrand=5207079361542093943&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010043&hvtargid=pla-1028470974419&psc=1"><img src="https://m.media-amazon.com/images/I/8194Vpz2h6L._AC_SX679_.jpg" alt="imagen" width="150" height="150"/> </a>&emsp;&emsp;&emsp;&emsp;
-  <a href="https://www.solerpalau.mx/producto.php?linea=Comercial&modelo=Centr%C3%ADfugos+de+Tejado+y+Pared&submodelo=CRHL-D"><img src="https://static.grainger.com/rp/s/is/image/Grainger/348MK5_AS01?$zmmain$" alt="imagen" width="150" height="150"/> </a>
+    <table align="center">
+      <tr>
+        <th>&emsp;  EXTRACTOR 230 W.  &emsp;</th>
+        <th>&emsp;  VENTILADOR 250 W.  &emsp;</th>
+        <th>&emsp;  EXTRACTOR 760 W.  &emsp;</th>
+    </tr>
+    </table>
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.mx%2FK%25C3%25BCchenks-Ventilador-port%25C3%25A1til-Extractor-el%25C3%25A9ctrico%2Fdp%2FB08CXWWND8&psig=AOvVaw3Coj1Ee5TrEVGTRwswI1Vu&ust=1650145652687000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKiJ9d2Fl_cCFQAAAAAdAAAAABAH" target="_blank" rel="noreferrer"> <img src="https://m.media-amazon.com/images/I/81-hciY6CVL._AC_SX466_.jpg" alt="imagen" width="150" height="150"/></a>&emsp;&emsp;&emsp;&emsp;
+      <a href="https://www.amazon.com.mx/Ventilador-industrial-circulaci%C3%B3n-velocidades-invernadero/dp/B08MJ43TFB/ref=asc_df_B08MJ43TFB/?tag=gledskshopmx-20&linkCode=df0&hvadid=547086987042&hvpos=&hvnetw=g&hvrand=5207079361542093943&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010043&hvtargid=pla-1028470974419&psc=1"><img src="https://m.media-amazon.com/images/I/8194Vpz2h6L._AC_SX679_.jpg" alt="imagen" width="150" height="150"/> </a>&emsp;&emsp;&emsp;&emsp;
+      <a href="https://www.solerpalau.mx/producto.php?linea=Comercial&modelo=Centr%C3%ADfugos+de+Tejado+y+Pared&submodelo=CRHL-D"><img src="https://static.grainger.com/rp/s/is/image/Grainger/348MK5_AS01?$zmmain$" alt="imagen" width="150" height="150"/> </a>
  </div> 
   <br> 
 </ul>
