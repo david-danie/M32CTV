@@ -3,6 +3,8 @@
 <div align="justify">Aquí hay código para automatizar el encendido/apagado de algunos dispositivos usados en invernaderos. Se usa un Atmega328p cargado con el bootloader de Arduino, comunicación inalámbrica via UART, temporización con un RTC y algo de electrónica para activar contactores de una bomba de riego, ventiladores y/o extractores, y lámparas de cutivo.</div>
 <br>
 <div align="center"><img src="./src/descripcion.png" alt="imagen" width="675" height="345"/><br></div>
+</br>
+<div align="justify">Al finalizar este proyecto se pretende tener una tarjeta de control para usarse con el código contenido en este repositorio. Se contará con diagramas electrónicos, "layout" de componentes, diagramas de conexión eléctrica y la documentacón que se pudiera generar.</div>
 
 # CONTENIDO
 
@@ -20,16 +22,16 @@
  <li align="justify"><b>Luz.</b><br>El sol como fuente de energía es una muy potente e influye directamente en el desarrollo de vida. Dentro del espectro de radiación solar encontramos la <b>radiación fotosintéticamente activa (PAR)<b>, donde los tonos azules y rojos son los más influyentes en el desarrollo de las plantas. La tecnología LED en la actualidad ofrece alternativas para suministro de luz en los cultivos. Se dispone de <b>1 pin digital</b> del microcontrolador para el control de una lámpara en CA.</li><br>
 <table align="center">
   <tr>
-    <th>Led rojo/azul.</th>
-    <th>Led blanco.</th>
-    <th>Otras lámparas.</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="./src/hyd_l.jpg" alt="imagen" width="100" height="100"/></td>
-    <td align="center"><img src="./src/phi_lw.jpg" alt="imagen" width="100" height="100"/></td>
-    <td align="center"><img src="./src/phi_so.jpg" alt="imagen" width="100" height="100"/></td>
+    <th>LEDS ROJOS Y AZULES.</th>
+    <th>LEDS BLANCOS.</th>
+    <th>OTRAS LÁMPARAS.</th>
   </tr>
 </table>
+  <div align="center">
+    <img src="./src/hyd_l.jpg" alt="imagen" width="100" height="150"/>&emsp;&emsp;&emsp;&emsp;
+    <img src="./src/phi_lw.jpg" alt="imagen" width="100" height="150"/>&emsp;&emsp;&emsp;&emsp;
+    <img src="./src/phi_so.jpg" alt="imagen" width="100" height="150"/>
+  </div><br>
 
   <li align="justify"><b>Riego.</b><br>Hay diferentes métodos de riego en la agricultura y se pueden mencionar algunos como: riego por asperción, por goteo, por gravedad, película de nutrientes, entre otros. Se hace la generalización de controlar el encendido/apagado de una bomba de agua o una electroválvula para realizar esta tarea.<b> Se dispone de 1 pin digital para el control.</b> </li> 
  
@@ -37,38 +39,38 @@
 
  <table align="center">
   <tr>
-    <th>Goteo.</th>
-    <th>Gravedad.</th>
-    <th>Película de nutrientes.</th>
-   <th>Válvula E.</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="./src/goteo.jpg" alt="imagen" width="100" height="100"/></td>
-    <td align="center"><img src="./src/grav1.jpg" alt="imagen" width="100" height="100"/></td>
-    <td align="center"><img src="./src/NFT.jpg" alt="imagen" width="100" height="100"/></td>
-    <td align="center"><img src="./src/valve.jpg" alt="imagen" width="100" height="100"/></td>
+    <th>&emsp;  GOTEO.  &emsp;</th>
+    <th>&emsp;  GRAVEDAD.  &emsp;</th>
+    <th>&emsp;  MÉTODO NFT.  &emsp;</th>
+    <th>&emsp;  VÁLVULA E.  &emsp;</th>
   </tr>
 </table>
+  <div align="center">
+    <a href=""><img src="./src/goteo.jpg" alt="imagen" width="100" height="150"/></a>&emsp;&emsp;&emsp;&emsp;
+    <a href=""><img src="./src/grav1.jpg" alt="imagen" width="100" height="150"/></a>&emsp;&emsp;&emsp;&emsp;
+    <a href=""><img src="./src/NFT.jpg" alt="imagen" width="100" height="150"/></a>&emsp;&emsp;&emsp;&emsp;
+    <a href=""><img src="./src/valve.jpg" alt="imagen" width="100" height="150"/></a>
+   </div><br>
+     
   <li align="justify"><b>Ventilación/extracción.</b><br>La calidad del aire de los espacios de cultivo influye en la temperatura y por lo tanto en el desarrollo de las plantas. Si es necesario forzar la cirulación aire limpio en los invernaderos y eliminar el aire viciado se incluyen equipos de extracción, ventilación y algunas veces calefacción.<b>Se dispone de 1 pin digital del microcontrolador</b> para el control de un ventilador y/o extractor en CA. </li>
  
  <br> 
 
  <div align="center">
+  <table align="center">
+   <tr>
+     <th>&emsp;  EXTRACTOR 230 W.  &emsp;</th>
+     <th>&emsp;  VENTILADOR 250 W.  &emsp;</th>
+     <th>&emsp;  EXTRACTOR 760 W.  &emsp;</th>
+   </tr>
+  </table>
      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.mx%2FK%25C3%25BCchenks-Ventilador-port%25C3%25A1til-Extractor-el%25C3%25A9ctrico%2Fdp%2FB08CXWWND8&psig=AOvVaw3Coj1Ee5TrEVGTRwswI1Vu&ust=1650145652687000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKiJ9d2Fl_cCFQAAAAAdAAAAABAH" target="_blank" rel="noreferrer"> <img src="https://m.media-amazon.com/images/I/81-hciY6CVL._AC_SX466_.jpg" alt="imagen" width="150" height="150"/></a>&emsp;&emsp;&emsp;&emsp;
-    <a href="https://www.amazon.com.mx/Ventilador-industrial-circulaci%C3%B3n-velocidades-invernadero/dp/B08MJ43TFB/ref=asc_df_B08MJ43TFB/?tag=gledskshopmx-20&linkCode=df0&hvadid=547086987042&hvpos=&hvnetw=g&hvrand=5207079361542093943&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010043&hvtargid=pla-1028470974419&psc=1"><img src="https://m.media-amazon.com/images/I/8194Vpz2h6L._AC_SX679_.jpg" alt="imagen" width="150" height="150"/> </a>&emsp;&emsp;&emsp;&emsp;
-    <a href="https://www.solerpalau.mx/producto.php?linea=Comercial&modelo=Centr%C3%ADfugos+de+Tejado+y+Pared&submodelo=CRHL-D"><img src="https://static.grainger.com/rp/s/is/image/Grainger/348MK5_AS01?$zmmain$" alt="imagen" width="150" height="150"/> </a>
- </div>
-  <br>
-<table align="center">
-  <tr>
-    <th>&emsp;EXTRACTOR 230 W.  &emsp;</th>
-    <th>&emsp;  VENTILADOR 250 W.  &emsp;</th>
-    <th>&emsp;  EXTRACTOR 760 W.&emsp;</th>
-  </tr>
- </table>
-
-
+  <a href="https://www.amazon.com.mx/Ventilador-industrial-circulaci%C3%B3n-velocidades-invernadero/dp/B08MJ43TFB/ref=asc_df_B08MJ43TFB/?tag=gledskshopmx-20&linkCode=df0&hvadid=547086987042&hvpos=&hvnetw=g&hvrand=5207079361542093943&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010043&hvtargid=pla-1028470974419&psc=1"><img src="https://m.media-amazon.com/images/I/8194Vpz2h6L._AC_SX679_.jpg" alt="imagen" width="150" height="150"/> </a>&emsp;&emsp;&emsp;&emsp;
+  <a href="https://www.solerpalau.mx/producto.php?linea=Comercial&modelo=Centr%C3%ADfugos+de+Tejado+y+Pared&submodelo=CRHL-D"><img src="https://static.grainger.com/rp/s/is/image/Grainger/348MK5_AS01?$zmmain$" alt="imagen" width="150" height="150"/> </a>
+ </div> 
+  <br> 
 </ul>
+  
 </div>
 
 ## TARJETA DE CONTROL
