@@ -1,24 +1,41 @@
 # M32CTV
 
-<div align="justify">Aquí hay código para automatizar el encendido/apagado de algunos dispositivos usados en invernaderos. Se usa un Atmega328p cargado con el bootloader de Arduino, comunicación inalámbrica via UART, temporización con un RTC y algo de electrónica para activar contactores de una bomba de riego, ventiladores y/o extractores, y lámparas de cutivo. La principal motivación de este proyecto es generar <b>independencia alimentaria</b> respecto a las especies que se adapten a estas tecnologías, principalmente hortalizas.</div>
+<div align="justify">Aquí hay código para automatizar el encendido/apagado de algunos dispositivos usados en invernaderos. Se usa un Atmega328p cargado con el bootloader de Arduino, comunicación inalámbrica via UART, temporización con un RTC y algo de electrónica para activar contactores de una bomba de riego, ventiladores y/o extractores, y lámparas de cutivo. La principal motivación de este proyecto es generar <b>independencia alimentaria</b> respecto a las especies que se adapten a estas tecnologías, se contempla principalmente hortalizas.</div>
 <br>
 <div align="center"><img src="./src/descripcion.png" alt="imagen" width="675" height="345"/><br></div>
 </br>
-<div align="justify">Al finalizar este proyecto se pretende tener una tarjeta de control para usarse con el código contenido en este repositorio. Se contará con diagramas electrónicos, "layout" de componentes, diagramas de conexión eléctrica y la documentacón que se pudiera generar.</div>
+<div align="justify">Al finalizar este proyecto se pretende tener una tarjeta de control para usarse con el código contenido en este repositorio. Se actualizara un circuito previamente construido con con un <b>PIC16F1827</b>. Dado el mayor número de pines del <b>ATMEGA328</b>, se le agregará funcionalidad a la tarjeta, como poder desplegar información en LCD de 20 X 4. Se contará con diagramas electrónicos, "layout" de componentes, diagramas de conexión eléctrica y la documentacón que se pudiera generar. </div>
+</br>
+ <table align="center">
+  <tr>
+    <th>Vista superior.</th>
+    <th>Vista inferior.</th>
+    <th>Tarjeta electrónica.</th>
+  </tr>
+</table>
+
+  <div align="center">
+    <img src="./src/picTop.jpg" alt="imagen" width="100" height="150"/>&emsp;&emsp;&emsp;&emsp;
+    <img src="./src/picBottom.jpg" alt="imagen" width="100" height="150"/>&emsp;&emsp;&emsp;&emsp;
+    <img src="./src/picSch.jpg" alt="imagen" width="100" height="150"/>
+  </div>
 
 # CONTENIDO
 
 * [DISPOSITIVOS A CONTROLAR.](#dispositivos-a-controlar)
-  - [LUZ.](#lámparas)
-  - [RIEGO.](#bomba-de-irrigación)
-  - [VENTILACIÓN.](#ventiladorextractor)
+  - [LÁMPARAS DE CULTIVO.](#lámparas)
+  - [BOMBA PARA IRRIGACIÓN.](#bomba-de-irrigación)
+  - [VENTILACIÓN/EXTRACCIÓN.](#ventiladorextractor)
 * [TARJETA DE CONTROL.](#tarjeta-de-control)
-  - [SALIDAS DIGITALES.](#lámparas)
+  - [SALIDAS DIGITALES SSR.](#lámparas)
   - [TEMPORIZACIÓN CON RTC.](#bomba-de-irrigación)
-  - [CONEXIÓN REMOTA/WIRELESS](#ventiladorextractor)
+  - [CONEXIÓN REMOTA/WIRELESS.](#ventiladorextractor)
   - [TEMPERATURA CON DS18B20.](#bomba-de-irrigación)
-  - [SALIDAS PWM A MOSFET](#ventiladorextractor)
+  - [SALIDAS PWM A MOSFET.](#ventiladorextractor)
 * [INSTALACIÓN ELÉCTRICA](#instalación-eléctrica)
+  - [SELECCIÓN DE CONTACTORES.](#ventiladorextractor)
+  - [DIAGRAMA ELÉCTRICO.](#bomba-de-irrigación)
+  - [CONEXXIÓN FINAL.](#ventiladorextractor)
 
 ## DISPOSITIVOS A CONTROLAR
 <div align="justify">Los invernaderos ofrecen muchas ventajas sobre los métodos de agricultura tradicionales. El cultivo de algunas plantas y hortalizas puede adaptarse a espacios dedicados en la ciudad. La tecnología usada en la agricultura protegida también se puede adaptar a estos lugares y puede contemplar la automatización de tareas como el riego, la ventilación y/o extracción de aire, control de fotoperiodo y también la medición de parámetros como temperatura, humedad, PH, etc.
@@ -86,7 +103,7 @@
  
  #### Salidas digitales SSR.
  <div align="justify">Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Las salidas del mcu están conectadas individualmente a un SSR <a href="https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787">AQH2213</a> con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.</div> 
- 
+  </br>
  <table align="center">
   <tr>
     <th>Diagrama típico de conexión.</th>
@@ -101,7 +118,7 @@
 #### Temporización con RTC.
 
 <div align="justify">Para temporizar el encendido y apagado que deben tener los equipos, se usa un <a href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf">RTC</a> a través de la interface serial I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar las salidas correspondientes.</div> 
-
+ </br>
 <table align="center">
   <tr>
     <th>Diagrama típico de conexión.</th>
@@ -115,23 +132,24 @@
 
 #### Conexion remota/wireless.
 
-<div align="justify">La interface USART nos permite hacer comunicaciones con implementaciones como WIFI, BLE, GSM, otros tipos de RF, estándares como RS485, RS232, también se puede adaptar a CAN y LIN. Se usa esta interface para hacer una comunicación via BLE, la cual nos permitirá actualizar las variables del cultivo.</div> 
-
+<div align="justify">La interface USART nos permite hacer comunicaciones con implementaciones como WIFI, BLE, GSM, otros tipos de RF, estándares como RS485, RS232, también se puede adaptar a CAN y LIN. Se usa esta interface para hacer una comunicación via BLE, la cual nos permitirá actualizar y modificar las variables del cultivo.</div> 
+ </br>
 <div align="center"><img src="./src/wirelessI.png" alt="imagen"/><br></div>
 
 #### Control de potencia PWM.
 
 <div align="justify">La modulación por ancho de pulso es una técnica eléctronica que se aplica principalmente para el control de potencia.</div> 
-
+ </br>
+ 
 #### Temperatura con DS18B20.
 
-<div align="justify">DS18B20</div> 
+<div align="justify">Medir la temperaturaen las áreas de cultivo de ha convertido en una labor preventiva. Conociendo el estado de la tamperatura en determinado momento, nos puede ayudar a conocer el coportoamiento del cultivo de acuerdo a ciertos rangos de temperatura. Quedará para una futura actualización de hardware incluir un sistema que efectue acciones correctivas.</div> 
+ </br>
 
 ## INSTALACIÓN ELÉCTRICA
 <div align="justify">Aquí se documentará sobre la instalación eléctrica propuesta.</div><br>
 
-<ul>
-<li>Contactores.</li>
-<li>Interruptores Termomagnéticos.</li>
-<li>Diagrama Eléctrico.</li>
-</ul>
+#### Contactores.
+#### Interruptores Termomagnéticos.
+#### Diagrama Eléctrico.
+
