@@ -3,14 +3,15 @@
 <div align="justify">Aquí hay código para automatizar el encendido/apagado de algunos dispositivos usados en invernaderos. Se usa un Atmega328p cargado con el bootloader de Arduino, comunicación inalámbrica via UART, temporización con un RTC y algo de electrónica para activar contactores de una bomba de riego, ventiladores y/o extractores, y lámparas de cutivo. La principal motivación de este proyecto es generar <b>independencia alimentaria</b> respecto a las especies que se adapten a estas tecnologías, se contempla principalmente hortalizas.</div>
 <br>
 <div align="center"><img src="./src/descripcion.png" alt="imagen" width="675" height="345"/><br></div>
+
 </br>
-<div align="justify">Al finalizar este proyecto se pretende tener una tarjeta de control para usarse con el código contenido en este repositorio. Se actualizara un circuito previamente construido con con un <b>PIC16F1827</b>. Dado el mayor número de pines del <b>ATMEGA328</b>, se le agregará funcionalidad a la tarjeta, como poder desplegar información en LCD de 20 X 4. Se contará con diagramas electrónicos, "layout" de componentes, diagramas de conexión eléctrica y la documentacón que se pudiera generar. </div>
+<div align="justify">Al finalizar este proyecto se pretende tener una tarjeta de control para usarse con el código contenido en este repositorio. Se actualizara un circuito previamente construido con un <a href="https://www.microchip.com/en-us/product/PIC16F1827">PIC16F1827</a>. Dado el mayor número de pines del <b>ATMEGA328</b>, se le agregará funcionalidad a la tarjeta, como poder desplegar información en LCD de 20 X 4. Se contará con diagramas electrónicos, "layout" de componentes, diagramas de conexión eléctrica y la documentacón que se pudiera generar. </div>
 </br>
  <table align="center">
   <tr>
-    <th>Vista superior.</th>
-    <th>Vista inferior.</th>
-    <th>Tarjeta electrónica.</th>
+    <th>&emsp;&emsp;Vista superior.&emsp;&emsp;</th>
+    <th>&emsp;&emsp;Vista inferior.&emsp;&emsp;</th>
+    <th>&emsp;&emsp;Tarjeta electrónica.&emsp;&emsp;</th>
   </tr>
 </table>
 
@@ -23,25 +24,25 @@
 # CONTENIDO
 
 * [DISPOSITIVOS A CONTROLAR.](#dispositivos-a-controlar)
-  - [LÁMPARAS DE CULTIVO.](#lámparas)
-  - [BOMBA PARA IRRIGACIÓN.](#bomba-de-irrigación)
-  - [VENTILACIÓN/EXTRACCIÓN.](#ventiladorextractor)
+  - [LÁMPARAS DE CULTIVO.](#lámparas-de-cultivo)
+  - [BOMBA PARA IRRIGACIÓN.](#bomba-para-irrigación)
+  - [VENTILACIÓN/EXTRACCIÓN.](#ventilaciónextracción)
 * [TARJETA DE CONTROL.](#tarjeta-de-control)
-  - [SALIDAS DIGITALES SSR.](#lámparas)
-  - [TEMPORIZACIÓN CON RTC.](#bomba-de-irrigación)
-  - [CONEXIÓN REMOTA/WIRELESS.](#ventiladorextractor)
-  - [TEMPERATURA CON DS18B20.](#bomba-de-irrigación)
-  - [SALIDAS PWM A MOSFET.](#ventiladorextractor)
+  - [SALIDAS DIGITALES SSR.](#salidas-digitales-ssr)
+  - [TEMPORIZACIÓN CON RTC.](#temporización-con-rtc)
+  - [CONEXIÓN REMOTA/WIRELESS.](#conexión-remotawireless)
+  - [CONTROL DE POTENCIA PWM.](#control-de-potencia-pwm)
+  - [TEMPERATURA CON DS18B20.](#temperatura-con-ds18b20)
 * [INSTALACIÓN ELÉCTRICA](#instalación-eléctrica)
-  - [SELECCIÓN DE CONTACTORES.](#ventiladorextractor)
-  - [DIAGRAMA ELÉCTRICO.](#bomba-de-irrigación)
-  - [CONEXXIÓN FINAL.](#ventiladorextractor)
+  - [SELECCIÓN DE CONTACTORES.](#selección-de-contactores)
+  - [DIAGRAMAS ELÉCTRICOS.](#diagramas-eléctricos)
+  - [CONEXIÓN FINAL.](#conexión-final)
 
 ## DISPOSITIVOS A CONTROLAR
 <div align="justify">Los invernaderos ofrecen muchas ventajas sobre los métodos de agricultura tradicionales. El cultivo de algunas plantas y hortalizas puede adaptarse a espacios dedicados en la ciudad. La tecnología usada en la agricultura protegida también se puede adaptar a estos lugares y puede contemplar la automatización de tareas como el riego, la ventilación y/o extracción de aire, control de fotoperiodo y también la medición de parámetros como temperatura, humedad, PH, etc.
 </div>
 
-#### LÁMPARAS.
+#### LÁMPARAS DE CULTIVO.
 
 <div align="justify">El sol como fuente de energía es una muy potente e influye directamente en el desarrollo de vida. Dentro del espectro de radiación solar encontramos la <b>radiación fotosintéticamente activa (PAR)<b>, donde los tonos azules y rojos son los más influyentes en el desarrollo de las plantas. La tecnología LED en la actualidad ofrece alternativas para suministro de luz en los cultivos. Se dispone de <b>1 pin digital</b> del microcontrolador para el control de una lámpara en CA.</div>
 </br>
@@ -58,7 +59,7 @@
     <img src="./src/phi_so.jpg" alt="imagen" width="100" height="150"/>
   </div>
 
-#### BOMBA DE IRRIGACIÓN.
+#### BOMBA PARA IRRIGACIÓN.
  
 <div align="justify">Hay diferentes métodos de riego en la agricultura y se pueden mencionar algunos como: riego por asperción, por goteo, por gravedad, película de nutrientes, entre otros. Se hace la generalización de controlar el encendido/apagado de una bomba de agua o una electroválvula para realizar esta tarea.<b> Se dispone de 1 pin digital para el control.</div>
  </br>
@@ -77,7 +78,7 @@
     <a href=""><img src="./src/valve.jpg" alt="imagen" width="100" height="150"/></a>
    </div>
 
-#### VENTILADOR/EXTRACTOR.
+#### VENTILACIÓN/EXTRACCIÓN.
  
 <div align="justify">La calidad del aire de los espacios de cultivo influye en la temperatura y por lo tanto en el desarrollo de las plantas. Si es necesario forzar la cirulación aire limpio en los invernaderos y eliminar el aire viciado se incluyen equipos de extracción, ventilación y algunas veces calefacción.<b>Se dispone de 1 pin digital del microcontrolador</b> para el control de un ventilador y/o extractor en CA.</div>
  </br>
@@ -99,9 +100,9 @@
  
  ## TARJETA DE CONTROL.
  
- <div align="justify">El microcontrolador <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf">Atmega328p</a> de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Cuenta con una memoria de programa de 32 KBytes, 1 KBytes en EEPROM, tiene hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar desde 1.8 volts hasta 5.5 volts. Algunas características usadas en este proyecto son; I2C, UART, salidas PWM y un bloque de salidas digitales para los actuadores. Se usa el bootloader de la tarjeta Arduino UNO.</div>
+ <div align="justify">El microcontrolador <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf">ATMEGA328p</a> de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Cuenta con una memoria de programa de 32 KBytes, 1 KBytes en EEPROM, tiene hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar desde 1.8 volts hasta 5.5 volts. Algunas características usadas en este proyecto son; I2C, UART, salidas PWM y un bloque de salidas digitales para los actuadores. Se usa el bootloader de la tarjeta Arduino UNO.</div>
  
- #### Salidas digitales SSR.
+ #### SALIDAS DIGITALES SSR.
  <div align="justify">Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Las salidas del mcu están conectadas individualmente a un SSR <a href="https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787">AQH2213</a> con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.</div> 
   </br>
  <table align="center">
@@ -115,7 +116,7 @@
   </tr>
   </table>
   
-#### Temporización con RTC.
+#### TEMPORIZACIÓN CON RTC.
 
 <div align="justify">Para temporizar el encendido y apagado que deben tener los equipos, se usa un <a href="https://datasheets.maximintegrated.com/en/ds/DS1307.pdf">RTC</a> a través de la interface serial I2C. Nuestro dispositivo maestro, realizará lecturas del RTC en el bucle principal y dependiendo de las variables de apagado de cada dispositivo, se procederá a activar o desactivar las salidas correspondientes.</div> 
  </br>
@@ -130,18 +131,18 @@
   </tr>
   </table>
 
-#### Conexion remota/wireless.
+#### CONEXIÓN REMOTA/WIRELESS.
 
 <div align="justify">La interface USART nos permite hacer comunicaciones con implementaciones como WIFI, BLE, GSM, otros tipos de RF, estándares como RS485, RS232, también se puede adaptar a CAN y LIN. Se usa esta interface para hacer una comunicación via BLE, la cual nos permitirá actualizar y modificar las variables del cultivo.</div> 
  </br>
 <div align="center"><img src="./src/wirelessI.png" alt="imagen"/><br></div>
 
-#### Control de potencia PWM.
+#### CONTROL DE POTENCIA PWM.
 
 <div align="justify">La modulación por ancho de pulso es una técnica eléctronica que se aplica principalmente para el control de potencia.</div> 
  </br>
  
-#### Temperatura con DS18B20.
+#### TEMPERATURA CON DS18B20.
 
 <div align="justify">Medir la temperaturaen las áreas de cultivo de ha convertido en una labor preventiva. Conociendo el estado de la tamperatura en determinado momento, nos puede ayudar a conocer el coportoamiento del cultivo de acuerdo a ciertos rangos de temperatura. Quedará para una futura actualización de hardware incluir un sistema que efectue acciones correctivas.</div> 
  </br>
@@ -149,7 +150,7 @@
 ## INSTALACIÓN ELÉCTRICA
 <div align="justify">Aquí se documentará sobre la instalación eléctrica propuesta.</div><br>
 
-#### Contactores.
-#### Interruptores Termomagnéticos.
-#### Diagrama Eléctrico.
+#### SELECCIÓN DE CONTACTORES.
+#### DIAGRAMAS ELÉCTRICOS.
+#### CONEXIÓN FINAL.
 
