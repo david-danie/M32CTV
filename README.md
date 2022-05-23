@@ -15,9 +15,9 @@
 </table>
 
   <div align="center">
-    <img src="./src/picTop.png" alt="imagen" width="250" height="150"/>&emsp;
-    <img src="./src/picBottom.png" alt="imagen" width="250" height="150"/>&emsp;
-    <img src="./src/picBoard.jpg" alt="imagen" width="250" height="150"/>
+    <img src="./src/picTop.png" alt="imagen" width="475" height="150"/>&emsp;
+    <img src="./src/picBottom.png" alt="imagen" width="475" height="150"/>&emsp;
+    <img src="./src/picBoard.jpg" alt="imagen" width="475" height="150"/>
   </div>
 
 # CONTENIDO
