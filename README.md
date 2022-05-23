@@ -5,7 +5,7 @@
 <div align="center"><img src="./src/descripcion.png" alt="imagen" width="675" height="345"/><br></div>
 
 </br>
-<div align="justify">Al finalizar este proyecto se pretende tener una tarjeta de control para usarse con el código contenido en este repositorio. Se actualizara un circuito previamente construido con un <a href="https://www.microchip.com/en-us/product/PIC16F1827">PIC16F1827</a>. Dado el mayor número de pines del <b>ATMEGA328</b>, se le agregará funcionalidad a la tarjeta, como poder desplegar información en LCD de 20 X 4. Se contará con diagramas electrónicos, "layout" de componentes, diagramas de conexión eléctrica y la documentacón que se pudiera generar. </div>
+<div align="justify">Al finalizar este proyecto se pretende tener una tarjeta de control para usarse con el código contenido en este repositorio. Se actualizara un circuito previamente construido con un <a href="https://www.microchip.com/en-us/product/PIC16F1827">PIC16F1827</a>. Dado el mayor número de pines del <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf">ATMEGA328P</a>, se le agregará funcionalidad a la tarjeta, como poder desplegar información en LCD de 20 X 4. Se contará con diagramas electrónicos, "layout" de componentes, diagramas de conexión eléctrica y la documentacón que se pudiera generar. </div>
 </br>
  <table align="center">
   <tr>
@@ -100,7 +100,7 @@
  
  ## TARJETA DE CONTROL.
  
- <div align="justify">El microcontrolador <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf">ATMEGA328p</a> de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Cuenta con una memoria de programa de 32 KBytes, 1 KBytes en EEPROM, tiene hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar desde 1.8 volts hasta 5.5 volts. Algunas características usadas en este proyecto son; I2C, UART, salidas PWM y un bloque de salidas digitales para los actuadores. Se usa el bootloader de la tarjeta Arduino UNO.</div>
+ <div align="justify">El microcontrolador <a href="https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf">ATMEGA328P</a> de Microchip/Atmel es un dispositivo de 8 bits con arquitectura RISC. Cuenta con una memoria de programa de 32 KBytes, 1 KBytes en EEPROM, tiene hasta 23 pines que se pueden configurar como salidas o entradas y puede trabajar desde 1.8 volts hasta 5.5 volts. Algunas características usadas en este proyecto son; I2C, UART, salidas PWM y un bloque de salidas digitales para los actuadores. Se usa el bootloader de la tarjeta Arduino UNO.</div>
  
  #### SALIDAS DIGITALES SSR.
  <div align="justify">Se ocupan 3 salidas digitales para la activación de los dispositivos mencionados (lámpara, bomba de agua y ventilador/extractor). Las salidas del mcu están conectadas individualmente a un SSR <a href="https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787">AQH2213</a> con un circuito de proteccion sugerido por el fabricante para cargas inductivas como lo es la bobina de los contactores.</div> 
