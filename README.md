@@ -44,7 +44,7 @@
 
 #### LÁMPARAS DE CULTIVO.
 
-<div align="justify">El sol como fuente de energía es una muy potente e influye directamente en el desarrollo de vida. Dentro del espectro de radiación solar encontramos la <b>radiación fotosintéticamente activa (PAR)<b>, donde los tonos azules y rojos son los más influyentes en el desarrollo de las plantas. La tecnología LED en la actualidad ofrece alternativas para suministro de luz en los cultivos. Se dispone de <b>1 pin digital</b> del microcontrolador para el control de una lámpara en CA.</div>
+<div align="justify">El sol como fuente de energía es una muy potente e influye directamente en el desarrollo de vida. Dentro del espectro de radiación solar encontramos la radiación fotosintéticamente activa (PAR), donde los tonos azules y rojos son los más influyentes en el desarrollo de las plantas. La tecnología LED en la actualidad ofrece alternativas para suministro de luz en los cultivos. Se dispone de 1 pin digital del microcontrolador para el control de una lámpara en CA.</div>
 </br>
  <table align="center">
   <tr>
@@ -61,7 +61,7 @@
 
 #### BOMBA PARA IRRIGACIÓN.
  
-<div align="justify">Hay diferentes métodos de riego en la agricultura y se pueden mencionar algunos como: riego por asperción, por goteo, por gravedad, película de nutrientes, entre otros. Se hace la generalización de controlar el encendido/apagado de una bomba de agua o una electroválvula para realizar esta tarea.<b> Se dispone de 1 pin digital para el control.</div>
+<div align="justify">Hay diferentes métodos de riego en la agricultura y se pueden mencionar algunos como: riego por asperción, por goteo, por gravedad, película de nutrientes, entre otros. Se hace la generalización de controlar el encendido/apagado de una bomba de agua o una electroválvula para realizar esta tarea. Se dispone de 1 pin digital para el control.</div>
  </br>
   <table align="center">
   <tr>
@@ -80,7 +80,7 @@
 
 #### VENTILACIÓN/EXTRACCIÓN.
  
-<div align="justify">La calidad del aire de los espacios de cultivo influye en la temperatura y por lo tanto en el desarrollo de las plantas. Si es necesario forzar la cirulación aire limpio en los invernaderos y eliminar el aire viciado se incluyen equipos de extracción, ventilación y algunas veces calefacción.<b>Se dispone de 1 pin digital del microcontrolador</b> para el control de un ventilador y/o extractor en CA.</div>
+<div align="justify">La calidad del aire de los espacios de cultivo influye en la temperatura y por lo tanto en el desarrollo de las plantas. Si es necesario forzar la cirulación aire limpio en los invernaderos y eliminar el aire viciado se incluyen equipos de extracción, ventilación y algunas veces calefacción. Se dispone de 1 pin digital del microcontrolador para el control de un ventilador y/o extractor en CA.</div>
  </br>
  <table align="center">
       <tr>
