@@ -17,7 +17,7 @@
   <div align="center">
     <img src="./src/picTop.png" alt="imagen" width="258" height="154"/>&emsp;
     <img src="./src/picBottom.png" alt="imagen" width="258" height="154"/>&emsp;
-    <img src="./src/picBoard.jpg" alt="imagen" width="244" height="256"/>
+    <img src="./src/picBoard.jpg" alt="imagen" width="430" height="256"/>
   </div>
 
 # CONTENIDO
