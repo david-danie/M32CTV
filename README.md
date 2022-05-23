@@ -150,6 +150,8 @@
 ## INSTALACIÓN ELÉCTRICA
 <div align="justify">Aquí se documentará sobre la instalación eléctrica propuesta.</div><br>
 
+<div align="center"><img src="./src/gabinete1.jpg" alt="imagen" width="675" height="345"/><br></div>
+
 #### SELECCIÓN DE CONTACTORES.
 #### DIAGRAMAS ELÉCTRICOS.
 #### CONEXIÓN FINAL.
